@@ -9,7 +9,6 @@ app.set("view engine", "ejs");
 
 // Express body parser
 const middleware = [
-  morgan("dev"),
   express.static(path.join(__dirname, "public")),
   express.json(),
 ];
