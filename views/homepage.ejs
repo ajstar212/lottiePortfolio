@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Jubayer Abdullah</title>
+    <link rel="stylesheet" href="/style.css" />
+    <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
+  </head>
+  <body>
+    <section>
+      <div id="navbar">
+        <a href="#service">SERVICES</a>
+        <a href="#contact">CONTACT</a>
+      </div>
+    </section>
+
+    <section id="hero">
+      <div>
+        <h1 class="intro">
+          I am <span class="name">JUBAYER ABDULLAH</span> <br />
+          <span class="title">MOTION GRAPHICS DESIGNER</span>
+        </h1>
+      </div>
+    </section>
+
+    <section id="hero-lottie">
+      <lottie-player
+        src="/Motion/motion.json"
+        background="transparent"
+        speed="1"
+        style="width: 100%; height: 60%"
+        loop
+        autoplay
+      ></lottie-player>
+    </section>
+
+    <section id="service">
+      <div class="sec-title">
+        <h1>My Services</h1>
+      </div>
+      <div class="container">
+        <div class="card">
+          <lottie-player
+            src="/Infographic/info.json"
+            background="transparent"
+            speed="1"
+            style="width: 100%; height: 1000%"
+            loop
+            autoplay
+          ></lottie-player>
+        </div>
+
+        <div class="card">
+          <lottie-player
+            src="/Slideshow/slideshow.json"
+            background="transparent"
+            speed="1"
+            style="width: 100%; height: 1000%"
+            loop
+            autoplay
+          ></lottie-player>
+        </div>
+
+        <div class="card">
+          <lottie-player
+            src="/Explainer/explainer.json"
+            background="transparent"
+            speed="1"
+            style="width: 100%; height: 1000%"
+            loop
+            autoplay
+          ></lottie-player>
+        </div>
+
+        <div class="card">
+          <lottie-player
+            src="/Lottie/lottie.json"
+            background="transparent"
+            speed="1"
+            style="width: 100%; height: 1000%"
+            loop
+            autoplay
+          ></lottie-player>
+        </div>
+      </div>
+    </section>
+
+    <section id="contact">
+      <div class="container">
+        <div class="sec-title">
+          <h1>Contact Me</h1>
+        </div>
+        <div class="content">
+          <div class="button">
+            <a href="https://www.behance.net/jubayerabdullah"
+              >Check Out My Other Projects On Behance</a
+            >
+          </div>
+          <div class="email">
+            Or Send Me An Email: jubayerabdullah88@gmail.com
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <script type="text/javascript">
+      var prevScrollpos = window.pageYOffset;
+      window.onscroll = function () {
+        var currentScrollpos = window.pageYOffset;
+        if (prevScrollpos > currentScrollpos) {
+          document.getElementById("navbar").style.top = "0";
+        } else {
+          document.getElementById("navbar").style.top = "-100px";
+        }
+
+        prevScrollpos = currentScrollpos;
+      };
+    </script>
+  </body>
+</html>

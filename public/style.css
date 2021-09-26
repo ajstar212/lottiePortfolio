@@ -1,0 +1,160 @@
+@import url("https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap");
+
+* {
+  scroll-behavior: smooth;
+}
+body {
+  margin: 0;
+  background: #fff;
+  font-family: "Bebas Neue", cursive;
+}
+
+#navbar {
+  background: black;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  display: block;
+  transition: top 0.8s;
+  z-index: 999;
+}
+
+#navbar a {
+  float: left;
+  display: block;
+  color: #fff;
+
+  text-decoration: none;
+  padding: 5px 10px;
+  margin: 1em;
+  font-size: 20px;
+}
+#navbar a:hover {
+  background-color: white;
+  color: black;
+  transition: all 0.2s ease-in;
+}
+
+#hero {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-image: url("/banner.png");
+  background-size: cover;
+}
+
+#hero .intro {
+  font-size: 60px;
+  text-align: center;
+  color: crimson;
+}
+
+#hero .intro .name {
+  color: red;
+}
+
+#hero-lottie {
+  height: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#hero-lottie .lottie1 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.sec-title h1 {
+  text-align: center;
+  font-size: 60px;
+}
+#service .container {
+  height: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#service .container .card {
+  margin: 10px;
+}
+#service .container .card:hover {
+  border: 1px solid black;
+  border-radius: 3px;
+  cursor: pointer;
+  transition: all 0.5s ease-out;
+}
+
+#contact {
+  margin-top: 10px;
+  padding-bottom: 20px;
+  background-color: cornflowerblue;
+  color: white;
+}
+#contact .content {
+  height: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+#contact .content .button {
+  width: 80%;
+  padding: 5px 10px;
+  background-color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+#contact .content .button:hover {
+  background-color: rgb(218, 216, 216);
+  transition: all 0.5s ease-out;
+}
+#contact .content .button a {
+  text-decoration: none;
+  color: cornflowerblue;
+  padding: 2px 5px;
+  font-size: 30px;
+}
+
+#contact .content .email {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 2px 5px;
+  font-size: 30px;
+  margin-top: 5px;
+}
+
+@media screen and (max-width: 480px) {
+  #hero {
+    height: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: url("/banner.png");
+    background-size: cover;
+  }
+  #navbar a {
+    font-size: 10px;
+    padding: 5px;
+  }
+  #hero .intro {
+    font-size: 40px;
+    margin-top: 40%;
+  }
+  .sec-title h1 {
+    font-size: 30px;
+  }
+  #service .container {
+    flex-wrap: wrap;
+  }
+  #contact .content .button a {
+    font-size: 20px;
+  }
+  #contact .content .email {
+    font-size: 20px;
+  }
+}
